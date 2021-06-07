@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+}
+
+.scroll-fix::before {
+    display: block;
+    margin-top: -3rem;
+    height: 8rem;
+    content: "";
+}
+
+.hero-shadow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: -1;
+}
+
+/* .................. */
+/*     nawigacja      */
+/* .................. */
+
+.navbar {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top: 0;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+
+.navbar-brand i {
+    animation: fire 1.5s linear infinite alternate;
+}
+
+@keyframes fire {
+    0% {
+        color: rgb(226, 220, 26)
+    }
+
+    30% {
+        color: rgb(255, 38, 0)
+    }
+
+    50% {
+        color: rgb(226, 220, 26)
+    }
+
+    100% {
+        color: rgb(255, 38, 0)
+    }
+}
+
+/* .................. */
+/*       Header       */
+/* .................. */
+
+
+header {
+    font-size: 2rem;
+}
+
+.carousel-item {
+    position: relative;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+.carousel-img-one {
+    background-image: url(img/mobile/mobile1.jpg);
+}
+
+.carousel-img-two {
+    background-image: url(img/mobile/mobile2.jpg);
+}
+
+.carousel-img-three {
+    background-image: url(img/mobile/mobile3.jpg);
+}
+
+@media(min-width: 1024px) {
+    .carousel-item {
+        height: 400px;
+    }
+}
+
+
+@media(min-width: 1400px) {
+    .carousel-item {
+        height: 600px;
+    }
+
+    .carousel-img-one {
+        background-image: url(img/desctop/desctop3.jpg);
+    }
+
+    .carousel-img-two {
+        background-image: url(img/desctop/desctop1.jpg);
+    }
+
+    .carousel-img-three {
+        background-image: url(img/desctop/desctop2.jpg);
+    }
+
+}
+
+/* .................. */
+/*       O nas        */
+/* .................. */
+
+#about p.title {
+    font-size: 5rem;
+
+}
+
+
+#about p.description {
+    font-size: 2rem;
+    padding-bottom: 50px;
+
+}
+
+#about .offer i {
+    font-size: 3rem;
+    background-color: #ff9600;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+}
+
+#about .offer p {
+    font-size: 1.8rem;
+    padding: 15px 10px 30px;
+}
+
+#about .offer div {
+    padding-top: 15px;
+}
+
+
+#about .offer {
+    margin-top: 20px;
+    margin-bottom: ;
+    box-shadow: 2px 2px 5px rgb(92, 88, 88);
+}
+
+
+
+
+
+/* .................. */
+/*       Karnety      */
+/* .................. */
+#options p.title {
+    font-size: 5rem;
+}
+
+#options .text-muted {
+    font-size: 1.2rem;
+}
+
+#options .price {
+    font-size: 8rem;
+    line-height: 1;
+    padding-bottom: 10px;
+}
+
+#options .btn {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+}
+
+#options .btn:hover {
+    background-color: #ff9600;
+    color: #000;
+}
+
+
+.card {
+    line-height: 3;
+    height: 600px;
+    max-width: 300px;
+    border: 2px orangered outset;
+    border-radius: 20px;
+    box-shadow: 20px 5px 20px 5px #aaa;
+}
+
+.card-text ul li {
+    list-style: none;
+}
+
+/* .................. */
+/*       Trenerzy     */
+/* .................. */
+
+
+#coach {
+    background: #000;
+}
+
+#coach .title {
+    font-size: 5rem;
+}
+
+#coach .description {
+    font-size: 2rem;
+    padding-bottom: 50px;
+
+}
+
+#coach .container .coach1 .img {
+    background-image: url(img/Darek.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+#coach .container .coach2 .img {
+    background-image: url(img/Anna.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+#coach .container .coach3 .img {
+    background-image: url(img/Jarek.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+#coach .container .coach4 .img {
+    background-image: url(img/Wiktoria.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+#coach .container .name {
+    font-size: 3rem;
+}
+
+/* .................. */
+/*      GALLERY       */
+/* .................. */
+
+#gallery .title {
+    font-size: 5rem;
+
+}
